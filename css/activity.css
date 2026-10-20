@@ -1,0 +1,33 @@
+*{margin: 0px;
+padding: 0px;}
+
+div{height: 100px;
+    width:100px;
+     background-color: brown; 
+     box-shadow: 6px 7px rgba(0, 0, 0, 0.541);
+     transition: 5s;
+     animation-name: movecolor;
+animation-duration: 6s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+ 
+   animation-name: move;
+ transform: rotate(180deg); 
+
+}
+div:hover{width: 100%;}
+
+@keyframes move{
+  0%{transform: translatex(0px);}
+  25%{transform: translatex(500px);}
+  50%{transform: translate(500PX,0PX);}
+   50%{transform: translate(500PX,500PX);}
+   75%{transform: translate(0PX,500PX);}
+  
+
+}
+
+
+
+
+/* @keyframes movecolor{50%{background-color: blanchedalmond;}} */
